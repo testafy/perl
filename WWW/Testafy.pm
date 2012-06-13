@@ -10,7 +10,6 @@ package WWW::Testafy;
     my $te = new WWW::Testafy;
 
     my $id = $te->run_test(
-        product  => 'Google',
         pbehave  => qq{
             For the url http://www.google.com
             Given a test delay of 1 second
