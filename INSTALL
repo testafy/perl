@@ -1,0 +1,8 @@
+WWW::Testafy has 3 dependencies that should be installed separately (for the time being). They are:
+    Moose
+    JSON
+    LWP::UserAgent
+
+All three are on CPAN.
+Once they are in your PATH, Testafy is good to go!
+Just 'use WWW::Testafy' and run Testafy tests to your heart's content.
