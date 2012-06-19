@@ -1,6 +1,8 @@
 package WWW::Testafy;
 # Copyright 2012 Grant Street Group
 
+our $VERSION = 0.01;
+
 =head1 NAME WWW::Testafy - Testafy API for perl developers
 
 =head1 SYNOPSIS
