@@ -1,8 +1,10 @@
-WWW::Testafy has 3 dependencies that should be installed separately (for the time being). They are:
-    Moose
-    JSON
-    LWP::UserAgent
+WWW::Testify is a perl module that can be installed in the standard way:
 
-All three are on CPAN.
-Once they are in your PATH, Testafy is good to go!
-Just 'use WWW::Testafy' and run Testafy tests to your heart's content.
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+If you checked this code out directly from github you'll also need to install
+Module::Install.
+
