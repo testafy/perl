@@ -26,7 +26,7 @@ package WWW::Testafy;
 =cut
 
 use Moose;
-use JSON;
+use JSON::XS ();
 use LWP::UserAgent;
 
 =head1 ATTRIBUTES
@@ -119,7 +119,7 @@ sub make_api_request {
 
     $request_vars->{login_name} = $self->testafy_username;
     my $r = {
-        json => to_json($request_vars)
+        json => JSON::XS::encode_json($request_vars)
     };
 
     $self->ua->credentials(
@@ -131,7 +131,7 @@ sub make_api_request {
     
     $self->response($self->ua->post($uri, $r));
     if (my $content = $self->response->content) {
-        eval { $self->response_vars(from_json($content)); };
+        eval { $self->response_vars(JSON::XS::decode_json($content)); };
         $self->response_vars({error => [ $content]}) if $@;
     }
 

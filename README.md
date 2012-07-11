@@ -4,5 +4,5 @@ perl
 Testafy's perl API wrapper
 Dependencies:
     Moose
-    JSON
+    JSON::XS
     LWP::UserAgent
