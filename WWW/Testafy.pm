@@ -40,7 +40,7 @@ use LWP::UserAgent;
 has 'base_api_uri' => (
     is      => 'rw',
     isa     => 'Str',
-    default => 'https://app.testafy.com/api/v0',
+    default => 'https://app.te52.com/api/v0',
 );
 
 has 'auth_realm' => (
@@ -52,7 +52,7 @@ has 'auth_realm' => (
 has 'auth_netloc' => (
     is      => 'rw',
     isa     => 'Str',
-    default => 'app.testafy.com:443',
+    default => 'app.te52.com:443',
 );
     
 =item response - HTTP::Response object received from the API server
