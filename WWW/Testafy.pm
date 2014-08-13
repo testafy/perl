@@ -40,7 +40,7 @@ use LWP::UserAgent;
 has 'base_api_uri' => (
     is      => 'rw',
     isa     => 'Str',
-    default => 'https://app.te52.com/api/v0',
+    default => 'https://app.te52.com/api/v1',
 );
 
 has 'auth_realm' => (
