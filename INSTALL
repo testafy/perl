@@ -1,6 +1,6 @@
 WWW::Testafy has 3 dependencies that should be installed separately (for the time being). They are:
     Moose
-    JSON
+    JSON::XS
     LWP::UserAgent
 
 All three are on CPAN.
